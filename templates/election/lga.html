@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>{{ lga.uniqueid }}</p>
+    <p>{{ lga.lga_name }}</p>
+    <p>{{ lga.lga_description }}</p>
+
+    <h1>Polling Units Results</h1>
+    {% for polling_unit in polling_units %}
+        <h2>{{ polling_unit.polling_unit_uniqueid }}</h2>
+        <p>{{ polling_unit.party_abbreviation }}</p>
+        <p>{{ polling_unit.party_score }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
