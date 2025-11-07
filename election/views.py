@@ -4,6 +4,7 @@ from .models import PollingUnit, AnnouncedPuResults, Lga
 from django.db.models.functions import Cast
 
 # Create your views here.
+# views.py
 
 def home(request):
     polling_units = PollingUnit.objects.all()
